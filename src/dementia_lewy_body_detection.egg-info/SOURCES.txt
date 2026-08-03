@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/dementia_lewy_body_detection.egg-info/PKG-INFO
+src/dementia_lewy_body_detection.egg-info/SOURCES.txt
+src/dementia_lewy_body_detection.egg-info/dependency_links.txt
+src/dementia_lewy_body_detection.egg-info/top_level.txt
