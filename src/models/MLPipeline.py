@@ -52,9 +52,8 @@ def train_model_evaluate(X, y, model, cv_strategy=cv_strategy, use_cv=True):
         print(f"AUC-ROC (OvR):     {roc_auc_score(y, y_proba, multi_class='ovr'):.4f}")
 
     # Calcolo ECE L2 (Binarizziamo la y per la Classe 1. Modifica == 1 in == 2 per DLB)
-    y_true_bin = (y == 1).astype(int)
-    print(f"ECE L2 (Classe 1): {calculate_ece_l2(y_true_bin, y_proba[:, 1]):.4f}")
-    print(f"ECE L2 (Classe 2): {calculate_ece_l2(y_true_bin, y_proba[:, 2]):.4f}")
+    y_true_bin = (y == 2).astype(int)
+    print(f"ECE L2 (Classe 3): {calculate_ece_l2(y_true_bin, y_proba[:, 2]):.4f}")
 
     return y_true_bin, y_proba  # Ritorna le etichette binarie e le probabilità della classe 1
 
