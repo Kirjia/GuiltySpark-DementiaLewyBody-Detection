@@ -61,6 +61,8 @@ bld/
 # Visual Studio 2017 auto generated files
 Generated\ Files/
 
+.tf-gpy-env/
+
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
@@ -129,6 +131,7 @@ StyleCopReport.xml
 
 *.parquet
 
+
 # Chutzpah Test files
 _Chutzpah*
 
@@ -181,6 +184,17 @@ coverage*.info
 # Visual Studio code coverage results
 *.coverage
 *.coveragexml
+
+# Ambienti virtuali
+tf-gpu-env/
+venv/
+.venv/
+env/
+
+# Cache di Python
+__pycache__/
+*.pyc
+
 
 # NCrunch
 _NCrunch_*
@@ -429,3 +443,4 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+tf-gpu-env/
