@@ -13,7 +13,7 @@ from tensorflow.keras.callbacks import Callback
 from tensorflow.keras import backend as K
 import gc
 from sklearn.utils.class_weight import compute_class_weight
-import utils
+from utils import ASSETS_DIR
 
 cv_strategy = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
 
